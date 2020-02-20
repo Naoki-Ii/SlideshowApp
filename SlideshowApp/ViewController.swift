@@ -86,6 +86,20 @@ class ViewController: UIViewController {
     }
     @IBAction func TapActions(_ sender: Any) {
         performSegue(withIdentifier: "ZoomIn", sender: nil)
+        
+        if self.timer != nil{
+            //タイマー停止
+            self.timer.invalidate()
+            self.timer = nil
+            
+            //ボタン有効化
+            NextButton.isEnabled = true
+            BackButton.isEnabled = true
+            
+            //ボタン表示名を再生に変更 色変更
+            SwitchButton.setTitle("再生", for: .normal)
+            SwitchButton.setTitleColor(UIColor.systemBlue, for: .normal)
+        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let zoompage:ZoomInViewController = segue.destination as!ZoomInViewController
