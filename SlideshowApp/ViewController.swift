@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //初期画面
-        let image = UIImage(named: "sample1")
+        let image = UIImage(named: "sample1.jpeg")
         slideImage.image = image
         }
     //画像チェンジファンクション
