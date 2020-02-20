@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var displayImageNo = 0
-    let imageNameArray = ["sample1","sample2","sample3","sample4","sample5","sample6","sample7","sample8","sample9","sample10","sample11","sample12","sample13","sample14","sample15","sample16"]
+    let imageNameArray = ["sample1.jpeg","sample2.jpeg","sample3.jpeg","sample4.jpeg","sample5.jpeg","sample6.jpeg","sample7.jpeg","sample8.jpeg","sample9.jpeg","sample10.jpeg","sample11.jpeg","sample12.jpeg","sample13.jpeg","sample14.jpeg","sample15.jpeg","sample16.jpeg"]
     
     @IBOutlet weak var slideImage: UIImageView!
     @IBOutlet weak var NextButton: UIButton!
